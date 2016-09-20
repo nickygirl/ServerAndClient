@@ -41,7 +41,7 @@ namespace CommunicationApplication
 
             labelInput = new Label();
             labelInput.Text = "Input Msg";
-            labelInput.Location = new Point(50, 1000);
+            labelInput.Location = new Point(50, 500);
 
             btnTurnOnServer = new Button();
             btnTurnOnServer.Text = "Start Server";
@@ -49,7 +49,7 @@ namespace CommunicationApplication
 
             btnSendMsg = new Button();
             btnSendMsg.Text = "Send";
-            btnSendMsg.Location = new Point(500, 1000);
+            btnSendMsg.Location = new Point(500, 500);
 
             txbIP = new TextBox();
             txbIP.Location = new Point(80, 50);
@@ -61,7 +61,7 @@ namespace CommunicationApplication
             txbContents.Location = new Point(50, 150);
 
             txbSendMsg = new TextBox();
-            txbSendMsg.Location = new Point(80, 1000);
+            txbSendMsg.Location = new Point(80, 500);
 
             this.Controls.Add(labelIP);
             this.Controls.Add(labelInput);
@@ -69,7 +69,10 @@ namespace CommunicationApplication
             this.Controls.Add(labelContents);
             this.Controls.Add(btnTurnOnServer);
             this.Controls.Add(btnSendMsg);
-            this.Controls.Add()
+            this.Controls.Add(txbContents);
+            this.Controls.Add(txbIP);
+            this.Controls.Add(txbPort);
+            this.Controls.Add(txbSendMsg);
 
         }
 
