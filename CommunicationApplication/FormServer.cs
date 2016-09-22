@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Net.Sockets;
+
 
 namespace CommunicationApplication
 {
@@ -22,6 +25,9 @@ namespace CommunicationApplication
         private TextBox txbPort;
         private TextBox txbContents;
         private TextBox txbSendMsg;
+        Thread threadWatch = null;
+        Socket socketWatch = null;
+        
 
         public FormServer()
         {
@@ -73,6 +79,8 @@ namespace CommunicationApplication
             this.Controls.Add(txbIP);
             this.Controls.Add(txbPort);
             this.Controls.Add(txbSendMsg);
+            this.Width = 550;
+            this.Height = 550;
 
         }
 
